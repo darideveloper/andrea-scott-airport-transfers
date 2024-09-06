@@ -20,7 +20,7 @@ export default function Hero () {
           </h2>
         </div>
 
-        <img src="./imgs/hero.jpg" alt="transport image" className="w-full"/>
+        <img src="./imgs/hero.webp" alt="transport image" className="w-full"/>
 
         <h1
           className={`
@@ -30,9 +30,15 @@ export default function Hero () {
             my-20 sm:mb-28 lg:mb-32
           `}
         >
-          WILL & RYAN'S 
+          Andrea & Scott
           <br />
-          MEXICO CELEBRATION
+          <p
+            className={`
+              text-lg
+            `}
+          >
+            December 31, 2024 • Cancún, Quintana Roo, Mexico
+          </p>
         </h1>
       </div>
     </section>
