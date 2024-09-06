@@ -11,7 +11,7 @@ import FormText from "../components/form-text"
 
 // Api
 import { getHotels } from "../api/hotels"
-import { saleEndpoint, apiUser } from "../api/api"
+import { saleEndpoint } from "../api/api"
 import { getTransports } from "../api/transports"
 
 // Context
@@ -200,11 +200,20 @@ export default function Form() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          "name": name,
-          "last-name": lastName,
-          "price": total,
-          "details": serviceDescription,
-          "email": email
+          "Name": name,
+          "Last name": lastName,
+          "Email": email,
+          "Passengers": passengers,
+          "Hotel": hotel,
+          "Arriving date": arrivingDate,
+          "Arriving time": arrivingTime,
+          "Arriving airline": arrivingAirline,
+          "Arriving flight": arrivingFlight,
+          "Departing date": departingDate,
+          "Departing time": departingTime,
+          "Departing airline": departingAirline,
+          "Departing flight": departingFlight,
+          "Price": total,
         }),
         mode: "cors",
       })

@@ -5,19 +5,19 @@ export async function getTransports() {
     {
       "id": "Arriving",
       "text": "Round Trip - Transfer",
-      "price": 400,
+      "price": 0,
       "initialActive": true
     },
     {
       "id": "Departing",
       "text": "Round Trip - Transfer",
-      "price": 400,
+      "price": 0,
       "initialActive": true
     },
     {
       "id": "Arriving,Departing",
       "text": "Round Trip - Transfer",
-      "price": 400,
+      "price": 0,
       "initialActive": true
     }
   ]
