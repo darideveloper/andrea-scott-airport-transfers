@@ -245,7 +245,7 @@ export default function Form() {
   }
 
   // Generate passager options
-  const maxPassenger = 4
+  const maxPassenger = 10
   const passengersData = []
   for (let passengerNum = 1; passengerNum <= maxPassenger; passengerNum++) {
     let label = `${passengerNum} passengers`
@@ -301,9 +301,6 @@ export default function Form() {
               handleUpdate={(e) => setPassengers(e.target.value)}
               options={passengersData}
               activeOption={passengers}
-            />
-            <FormText
-              text="Maximum four passengers per vehicle"
             />
             <Select
               label='Hotel'
