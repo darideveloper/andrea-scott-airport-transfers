@@ -204,7 +204,7 @@ export default function Form() {
           "Last name": lastName,
           "Email": email,
           "Passengers": passengers,
-          "Hotel": hotel,
+          "Hotel": otherHotel ? otherHotel : hotel,
           "Arriving date": arrivingDate,
           "Arriving time": arrivingTime,
           "Arriving airline": arrivingAirline,
