@@ -34,7 +34,7 @@ export default function Hero () {
           <br />
           <p
             className={`
-              text-lg
+              text-2xl
             `}
           >
             December 31, 2024 • Cancún, Quintana Roo, Mexico
