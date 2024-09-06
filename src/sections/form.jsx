@@ -11,7 +11,7 @@ import FormText from "../components/form-text"
 
 // Api
 import { getHotels } from "../api/hotels"
-import { saleEndpoint } from "../api/api"
+import { saleEndpoint, apiUser } from "../api/api"
 import { getTransports } from "../api/transports"
 
 // Context
@@ -200,31 +200,23 @@ export default function Form() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          "name": name,
-          "last-name": lastName,
-          "price": total,
-          "details": serviceDescription,
-          "email": email
+          "user": apiUser,
+          "url": window.location.href,
+          "products": {
+            "Andrea & Scott Transportation": {
+              amount: 1,
+              image_url: "https://github.com/darideveloper/will-ryan-airport-transfers/raw/master/public/imgs/favicon.png?raw=true",
+              price: total,
+              description: serviceDescription,
+            }
+          }
         }),
         mode: "cors",
       })
       const response_json = await response.json()
   
-      // Show error if api call fails
-      if (response_json.status == "error") {
-        console.log ({response_json})
-        alertError()
-      } else {        
-        Swal.fire({
-          icon: 'success',
-          title: 'Thank you!',
-          text: 'Your transportation has been reserved succesfully',
-          footer: 'We will contact you soon'
-        }).then (() => {
-          // Reload page
-          window.location.reload()
-        })
-      }
+      const stripeUrl = response_json.stripe_url
+      window.location.href = stripeUrl
       
     } catch (error) {
       console.log ({error})
