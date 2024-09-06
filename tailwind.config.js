@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blue": "#4F6A9E",
-        "black": "#1a1a1a",
+        "blue": "#265c58",
+        "black": "#0d2b29",
         "white": "#ffffff",
-        "gold": "#C8B568"
+        "gold": "#fff"
       }
     },
   },

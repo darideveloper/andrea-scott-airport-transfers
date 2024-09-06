@@ -247,7 +247,7 @@ export default function Form() {
   }
 
   return (
-    <section className="buy-form container" id="buy">
+    <section className="buy-form container text-black" id="buy">
       <Subtitle
         text='Transportation'
       />
