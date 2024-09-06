@@ -22,10 +22,10 @@ export default function ServiceCards () {
   ]
   
   return (
-    <div className="sevicves-cards grid grid-cols-1 gap-20 max-w-7xl mx-auto sm:grid-cols-2 md:grid-cols-3">
+    <div className="sevicves-cards grid grid-cols-1 gap-20 max-w-7xl mx-auto sm:grid-cols-2 md:grid-cols-3 text-black">
       {services.map(({text, svgPath}, index) => (
         <div className="service-card flex items-center justify-center flex-col w-full" key={index}>
-          <svg viewBox="0 0 24 24" className="w-40">
+          <svg viewBox="0 0 24 24" className="w-40 fill-black">
             {svgPath}
           </svg>
           <h3 className="uppercase text-xl mt-5">{text}</h3>
