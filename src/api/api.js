@@ -1,4 +1,3 @@
-export const apiBaseUrl = 'https://stripe-api-flask.herokuapp.com/'
-// export const apiBaseUrl = 'http://localhost:8000/will-ryan'
-export const saleEndpoint = `${apiBaseUrl}`
-export const apiUser = "cancun_concierge_consolidated_supply"
+// export const apiBaseUrl = 'https://ezbookingtours-store.herokuapp.com/andrea-scott'
+export const apiBaseUrl = 'http://localhost:8000/andrea-scott'
+export const saleEndpoint = `${apiBaseUrl}/sale/`
