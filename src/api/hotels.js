@@ -1,4 +1,4 @@
-export async function getHotels () {
+export async function getHotels() {
 
   // Format data
   const data = [
@@ -10,6 +10,11 @@ export async function getHotels () {
     {
       value: "sample hotel 2",
       label: "sample hotel 2",
+      price: 0
+    },
+    {
+      value: "Other hotel in Playa del Carmen area",
+      label: "Other hotel in Playa del Carmen area",
       price: 0
     }
   ]
