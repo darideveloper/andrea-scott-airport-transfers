@@ -6,7 +6,7 @@ export default function Hero () {
 
       <div className="hero-image relative">
 
-        <div className="text-wrapper mt-16 mb-10 w-full z-10 text-center flex flex-col items-center justify-center sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:m-0">
+        <div className="text-wrapper mt-16 mb-10 w-full z-10 text-center flex flex-col items-centerjustify-center sm:absolute sm:bottom-1/4 sm:left-1/2 sm:-translate-x-1/2 sm:m-0">
           <h2 className='py-2 px-4 text-lg sm:text-2xl md:text-4xl lg:text-6xl leading-snug bg-white text-black inline-block lg:py-5 lg:px-20 '>
             Complimentary transportation will be provided
             <br />
