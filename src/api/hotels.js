@@ -8,8 +8,8 @@ export async function getHotels() {
       price: 0
     },
     {
-      value: "Other hotel in Playa del Carmen area",
-      label: "Other hotel in Playa del Carmen area",
+      value: "Other hotel in Cancun area",
+      label: "Other hotel in Cancun area",
       price: 0
     }
   ]

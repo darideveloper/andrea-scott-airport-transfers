@@ -316,7 +316,7 @@ export default function Form() {
 
             {/* Render input for other hotel */}
             {
-              (hotel == 'Other hotel in Playa del Carmen area') &&
+              (hotel == 'Other hotel in Cancun area') &&
               <Input
                 label='Hotel name'
                 placeholder='Enter your other hotel name'
